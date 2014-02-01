@@ -1,12 +1,15 @@
 package Material;
 public class Revista extends Material {
 	public int edicao;
-	public String mes_ano;
+	public String mes;
+	public int ano;
 	
-	public Revista(int codigo, String titulo, int edicao, String mes_ano) {
+	
+	public Revista(int codigo, String titulo, int edicao, String mes, int ano) {
 		super(codigo, titulo);
 		this.edicao = edicao;
-		this.mes_ano = mes_ano;
+		this.mes = mes;
+		this.ano = ano;
 	}
 
 	public int getEdicao() {
@@ -17,12 +20,6 @@ public class Revista extends Material {
 		this.edicao = edicao;
 	}
 
-	public String getMes_ano() {
-		return mes_ano;
-	}
 
-	public void setMes_ano(String mes_ano) {
-		this.mes_ano = mes_ano;
-	}
 
 }

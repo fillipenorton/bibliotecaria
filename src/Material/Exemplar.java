@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class Exemplar {
 	public int codigo;
 	public boolean emprestado;
-	public Material m;
+	public int material_cod;
 	
-	public Exemplar(int codigo, boolean emprestado) {
+	public Exemplar(int material_cod, int codigo, boolean emprestado) {
+		this.material_cod = material_cod;
 		this.codigo = codigo;
 		this.emprestado = emprestado;
 	}
