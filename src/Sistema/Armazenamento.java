@@ -6,10 +6,8 @@ import java.util.Hashtable;
 public class Armazenamento {
     public static Hashtable<String, Emprestimo> hashEmprestimo = new Hashtable<String, Emprestimo>();
     public static Hashtable<String, Reserva> hashReserva = new Hashtable<String, Reserva>();
-    public static Hashtable<Integer, Livro> hashLivro = new Hashtable<Integer, Livro>();
-    public static Hashtable<Integer, Revista> hashRevista = new Hashtable<Integer, Revista>();
-    public static Hashtable<Integer, Cd> hashCd = new Hashtable<Integer, Cd>();
-    public static Hashtable<Integer, Dvd> hashDvd = new Hashtable<Integer, Dvd>();
+    public static Hashtable<Integer, Material> hashMaterial = new Hashtable<Integer, Material>();
+
     public static Hashtable<Integer, Exemplar> hashExemplar = new Hashtable<Integer, Exemplar>();
     
     public static Hashtable<Integer, Usuario> hashUsuario = new Hashtable<Integer, Usuario>();
@@ -24,25 +22,25 @@ public class Armazenamento {
     	Professor professor = new Professor(100, "Carlos Lucena");
     	hashUsuario.put(100, professor);
 
-    	Livro livro1 = new Livro(100, "Engenharia de Software", "Addison Wesley", "Ian Sommervile", 6, 2000);
-    	hashLivro.put(100, livro1);
+       	Livro livro1 = new Livro(100, "Engenharia de Software", "Addison Wesley", "Ian Sommervile", 6, 2000);
+    	hashMaterial.put(100, livro1);
     	Livro livro2 = new Livro(101, "UML Guia do Usuario", "Campus", "G. Booch, J. Rumbaugh, I. Jacobson", 7, 2000);
-    	hashLivro.put(101, livro2);
+    	hashMaterial.put(101, livro2);
     	
     	Revista revista1 = new Revista(200, "IEEE Transactions On Soft. Eng", 53, "Setembro", 2006);
-    	hashRevista.put(100, revista1);
+    	hashMaterial.put(100, revista1);
 	
     	Revista revista2 = new Revista(201, "IEEE Transactions On Soft. Eng", 54, "Outubro", 2006);
-    	hashRevista.put(100, revista2);
+    	hashMaterial.put(100, revista2);
     	
     	Cd cd1 = new Cd(300,"Back to Black", "Amy Winehouse", "rehab, you know i'm no good, me n' mrs. 	Jones", 2006);
-    	hashCd.put(300, cd1);
+    	hashMaterial.put(300, cd1);
     	
     	Cd cd2 = new Cd(301,"Ie Ie Ie", "Arnaldo Antunes", "Long, Invejoso, Envelhecer", 2009);
-    	hashCd.put(301, cd2);
+    	hashMaterial.put(301, cd2);
 
     	Dvd dvd1 = new Dvd(400,"Indiana Jones", "Harrison Ford", 2008, 4);
-    	hashDvd.put(400, dvd1);
+    	hashMaterial.put(400, dvd1);
 
     	Exemplar exemplar1 = new Exemplar(100,1, true);
     	hashExemplar.put(1, exemplar1);
