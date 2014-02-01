@@ -9,9 +9,11 @@ public class Sistema{
 	public static void main(String[] args) {
 		Armazenamento.criaObjetos();
 		
-		String input = Keyboard.readString();
-		String[] opcao = input.split(" ");
-
+		//String input = Keyboard.readString();
+		//String[] opcao = input.split(" ");
+		
+		Livro l = Armazenamento.hashLivro.get(101);
+		System.out.println(l.editora);
 	}
 
 }
