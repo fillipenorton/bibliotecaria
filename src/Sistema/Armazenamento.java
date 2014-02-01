@@ -14,7 +14,7 @@ public class Armazenamento {
     
     public static Hashtable<Integer, Usuario> hashUsuario = new Hashtable<Integer, Usuario>();
     
-    public void criaObjetos(){
+    public static void criaObjetos(){
     	AlunoGrad alunoG1 = new AlunoGrad(123, "João da Silva");
     	hashUsuario.put(123, alunoG1);
     	AlunoGrad alunoG2 = new AlunoGrad(789, "Pedro Paulo");
@@ -27,7 +27,7 @@ public class Armazenamento {
     	Livro livro1 = new Livro(100, "Engenharia de Software", "Addison Wesley", "Ian Sommervile", 6, 2000);
     	hashLivro.put(100, livro1);
     	Livro livro2 = new Livro(101, "UML Guia do Usuario", "Campus", "G. Booch, J. Rumbaugh, I. Jacobson", 7, 2000);
-    	hashLivro.put(100, livro2);
+    	hashLivro.put(101, livro2);
     	
     	Revista revista1 = new Revista(200, "IEEE Transactions On Soft. Eng", 53, "Setembro", 2006);
     	hashRevista.put(100, revista1);
